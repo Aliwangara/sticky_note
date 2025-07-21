@@ -32,7 +32,7 @@ body{
         color: #ff0000;
         font-size: 1.2rem;
         position: relative;
-        opacity: .8;
+        opacity: .7;
     
 }
 
@@ -71,7 +71,7 @@ body{
 nav{
     display: flex;
     background-color: #ffffff;
-    padding: .5rem 1.8rem;
+    padding: .4rem 1.8rem;
     border-bottom: 2px solid #eeeeeebd;
     
    
@@ -96,6 +96,40 @@ nav ul{
 }
 
 
+.heading-container{
+    max-width: 1200px;
+    overflow: hidden;
+    padding:0 5rem 0 5rem;
+}
+
+.heading-container h1,p{
+    text-align: center;
+}
+.heading-container h1{
+    padding: 3rem 0 1.5rem 0;
+    font: inherit;
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: inherit;
+}
+
+.heading-container p{
+    color: #57565681;
+    font: optional;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+
+.heading-container img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 1000px;
+    height: 50vh;
+    border-radius: 20px;
+}
 
 
 
