@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky Notes</title>
+  <link rel="stylesheet" href="content.css"/>
+  <script src="https://kit.fontawesome.com/2256adb598.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>📝 Sticky Notes</h1>
+    <button class="new-note">➕ New Note</button>
+  </header>
+
+  <main>
+    <section class="note-editor">
+      <div class="controls">
+        <div class="background">
+          <label>Background:</label>
+          <button class="bg yellow selected"></button>
+          <button class="bg blue"></button>
+          <button class="bg green"></button>
+          <button class="bg pink"></button>
+        </div>
+
+        <div class="text-style">
+          <label>Text:</label>
+          <button class="text black selected"></button>
+          <button class="text white"></button>
+
+          <button class="font-style"><img src="images/text_icon.png" alt=""> Medium</button>
+        </div>
+
+        <div class="toolbar">
+        
+          <button><b>B</b></button>
+          <button><i>I</i></button>
+          <button><u>U</u></button>
+          
+        </div>
+
+        <div class="text-align">
+           <button><i class="fa-solid fa-align-left"></i></button> 
+            <button><i class="fa-solid fa-align-center"></i></button>
+            <button><i class="fa-solid fa-align-right"></i></button>
+
+
+        </div>
+
+        <div class="emoji">
+            <i class="fa-solid fa-face-smile"></i>
+
+        </div>
+      </div>
+
+      <textarea class="note-text" placeholder="Start typing here...">
+Welcome to your new sticky note! Start typing here. You can change the background, text color, font size, and apply styles like bold, italic, and underline. Organize your thoughts beautifully.
+      </textarea>
+
+      <button class="save-note">Save Note</button>
+    </section>
+
+    <section class="sticky-notes">
+      <h2>Sticky Notes</h2>
+    </section>
+  </main>
+
+  <footer>
+    <button class="lang">English</button>
+    <p>&copy; 2025 Sticky Notes</p>
+  </footer>
+</body>
+</html>

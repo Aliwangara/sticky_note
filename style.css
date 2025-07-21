@@ -116,7 +116,7 @@ nav ul{
 .heading-container{
     max-width: 1200px;
     overflow: hidden;
-    padding:0 5rem 0 5rem;
+    padding:0 5rem 0 8rem;
 }
 
 .heading-container h1,p{
