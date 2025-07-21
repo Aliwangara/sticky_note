@@ -20,6 +20,23 @@ body{
     overflow-x: hidden;
 
 }
+.container{
+    position: relative;
+}
+
+.note-fluid{
+    position: absolute;
+    margin-top: 200px;
+    right: 5px;
+    font:inherit;
+    font-weight: bold;
+    color: #05050560;
+    font-style: inherit;
+    background-color: #ffff00;
+    padding: .4rem;
+    border-radius: 15px;
+    position:fixed;
+}
 
 
 .nav-icon-header{
