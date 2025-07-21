@@ -59,7 +59,7 @@ Clone or download the project:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/sticky-notes-app
+git clone https://github.com/Aliwangara/sticky_note.git
 cd sticky-notes-app
 Open index.html in your browser:
 
