@@ -4,6 +4,12 @@ const saveNoteBtn = document.getElementById('save-note-btn');
 
 
 
+  const dropdownToggle = document.querySelector('.dropdown-toggle');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  const selectedColor = document.querySelector('.selected-color');
+
+
+
 
 saveNoteBtn.addEventListener('click', () => {
     const heading = headingElement.value.trim();
@@ -29,3 +35,31 @@ saveNoteBtn.addEventListener('click', () => {
 
 
 
+dropdownToggle.addEventListener('click', ()=>{
+    dropdownMenu.classList.toggle('show')
+})
+
+document.addEventListener('click', (e)=>{
+    if(!e.target.closest('.dropdown')){
+        dropdownMenu.classList.remove('show')
+    }
+})
+
+document.querySelectorAll('.color-option').forEach(option=>{
+    option.addEventListener('click', function(){
+        const color = this.getAttribute('data-color');
+        noteEl.style.backgroundColor=color;
+
+        selectedColor.style.backgroundColor= color;
+
+        localStorage.setItem('bgcolor', color)
+        dropdownMenu.classList.remove('show')
+    })
+})
+
+const savedColour = localStorage.getItem('bgcolor');
+
+if(savedColour){
+    document.body.style.backgroundColor = savedColour;
+    selectedColor.style.backgroundColor = savedColour;
+}

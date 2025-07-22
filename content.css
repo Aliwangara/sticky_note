@@ -94,10 +94,76 @@ main {
 
 }
 
-.bg.yellow { background: #fff176; }
-.bg.blue { background: #81d4fa; }
-.bg.green { background: #a5d6a7; }
-.bg.pink { background: #f48fb1; }
+
+
+
+.background-selector {
+  position: relative;
+  display: flex;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.selected-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.dropdown-arrow {
+  font-size: 0.8em;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 5px;
+  width: 150px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.dropdown-menu.show {
+  display: grid;
+}
+
+.color-option {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+  border-color: #333;
+}
+
+
+
+
+
+
+
 
 .text.black { background: #000; }
 .text.white { background: #fff; border: 1px solid #ccc; }

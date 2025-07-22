@@ -16,13 +16,44 @@
   <main>
     <section class="note-editor">
       <div class="controls">
-        <div class="background">
-          <label>Background:</label>
-          <button class="bg yellow selected"></button>
-          <button class="bg blue"></button>
-          <button class="bg green"></button>
-          <button class="bg pink"></button>
+
+
+
+
+
+
+
+
+
+        <div class="background-selector">
+            <label for="bg-color">Background:</label>
+            <div class="dropdown">
+                <button class="dropdown-toggle">
+                <span class="selected-color" style="background-color: #fef08a;"></span>
+                <span class="dropdown-arrow">▼</span>
+                </button>
+                <div class="dropdown-menu">
+                <div class="color-option" data-color="#ffff" style="background-color: #ffff;" title="White"></div>
+                <div class="color-option" data-color="#fef08a" style="background-color: #fef08a;" title="Autumn Yellow"></div>
+                <div class="color-option" data-color="#f59e0b" style="background-color: #f59e0b;" title="Harvest Orange"></div>
+                <div class="color-option" data-color="#ef4444" style="background-color: #ef4444;" title="Maple Red"></div>
+                <div class="color-option" data-color="#7c2d12" style="background-color: #7c2d12;" title="Rust Brown"></div>
+                <div class="color-option" data-color="#65a30d" style="background-color: #65a30d;" title="Olive Green"></div>
+                <div class="color-option" data-color="#166534" style="background-color: #166534;" title="Forest Green"></div>
+                <div class="color-option" data-color="#713f12" style="background-color: #713f12;" title="Spice Brown"></div>
+                <div class="color-option" data-color="#9a3412" style="background-color: #9a3412;" title="Pumpkin Spice"></div>
+                <div class="color-option" data-color="#1e40af" style="background-color: #1e40af;" title="Deep Sky"></div>
+                <div class="color-option" data-color="#1e3a8a" style="background-color: #1e3a8a;" title="Twilight Blue"></div>
+                </div>
+            </div>
         </div>
+
+
+
+
+
+
+
 
         <div class="text-style">
           <label>Text:</label>
