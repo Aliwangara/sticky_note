@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>📝 Sticky Notes</h1>
-    <button class="new-note">➕ New Note</button>
+    <button class="new-note" ><a href="index.html">Home</a></button>
   </header>
 
   <main>
@@ -54,11 +54,11 @@
         </div>
       </div>
 
-      <textarea class="note-text" placeholder="Start typing here...">
-Welcome to your new sticky note! Start typing here. You can change the background, text color, font size, and apply styles like bold, italic, and underline. Organize your thoughts beautifully.
+      <input type="text" class="heading-element" placeholder="Enter Note Heading">
+      <textarea class="note-text" placeholder="Start typing here..." id="note-el">
       </textarea>
 
-      <button class="save-note">Save Note</button>
+      <button class="save-note" id="save-note-btn">Save Note</button>
     </section>
 
     <section class="sticky-notes">
@@ -70,5 +70,8 @@ Welcome to your new sticky note! Start typing here. You can change the backgroun
     <button class="lang">English</button>
     <p>&copy; 2025 Sticky Notes</p>
   </footer>
+
+
+  <script src="content.js"></script>
 </body>
 </html>
