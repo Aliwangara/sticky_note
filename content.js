@@ -11,7 +11,7 @@ saveNoteBtn.addEventListener('click', () => {
 
     if (!heading && !note) return;
     const noteStorage = JSON.parse(localStorage.getItem('notesEntities')) || [];
-    localStorage.clear(noteStorage)
+    
 
     noteStorage.push({ heading, note });
 
