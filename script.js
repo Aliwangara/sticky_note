@@ -11,16 +11,21 @@ function getNotes(){
 
 }
 
+function bacgroudDisplay(){
+   return localStorage.getItem('bgcolor') || '#f9fafb';
+}
 
 displayNotes()
 
 function displayNotes() {
     const notesStorage = getNotes()
+    const bgcolor = bacgroudDisplay()
   cardList.innerHTML = '';
 
   notesStorage.forEach((note, index) => {
     const card = document.createElement('div');
     card.className = "card";
+    card.style.backgroundColor = bgcolor;
 
     card.innerHTML = `
       <div class="card-header">
@@ -64,5 +69,7 @@ clearBtn.addEventListener('click', ()=>{
     displayNotes()
    
 })
+
+
 
 
