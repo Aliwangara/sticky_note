@@ -2,6 +2,7 @@ const noteEl = document.getElementById('note-el');
 const headingElement = document.querySelector('.heading-element');
 const saveNoteBtn = document.getElementById('save-note-btn');
 
+const notesCategories = [];
 
 
   const dropdownToggle = document.querySelector('.dropdown-toggle');
