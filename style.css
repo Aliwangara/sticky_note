@@ -150,6 +150,7 @@ nav ul{
 
 .card-container{
     padding: 2rem;
+    margin-bottom: 100px;
     
 
 }
@@ -275,5 +276,150 @@ footer a{
     color: #4b4b4b;
     font-size: 1.15rem;
 }
+
+
+/* Extra Large Screens (Desktops > 1200px) */
+@media screen and (min-width: 1201px) {
+  .heading-container {
+    padding: 0 6rem;
+  }
+
+  .heading-container img {
+    height: 60vh;
+  }
+}
+
+/* Large Screens (Desktops and Laptops) */
+@media screen and (max-width: 1200px) {
+  .heading-container {
+    padding: 0 4rem;
+  }
+
+  .heading-container p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-icon-header p {
+    margin-left: 0;
+  }
+
+  .heading-container {
+    padding: 0 2rem;
+  }
+
+  .card-container-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .card-container-header a:nth-of-type(6) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .heading-container img {
+    height: 45vh;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+/* Small Screens (Phones) */
+@media screen and (max-width: 768px) {
+  .nav-icon-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-icon-header p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .heading-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .heading-container p {
+    font-size: 1rem;
+  }
+
+  .heading-container {
+    padding: 0 1rem;
+  }
+
+  .card-container {
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-p {
+    text-align: center;
+  }
+
+  .note-fluid {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    margin-top: 150px;
+  }
+}
+
+/* Extra Small Screens (< 480px) */
+@media screen and (max-width: 480px) {
+  .nav-icon-header h1 {
+    font-size: 1rem;
+  }
+
+  .nav-icon-header i {
+    font-size: 1rem;
+  }
+
+  .card-container-header a {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+
+  .heading-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .heading-container p {
+    font-size: 0.95rem;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .note-fluid {
+    margin-top: 120px;
+    right: 10px;
+  }
+}
+
 
 

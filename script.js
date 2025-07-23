@@ -6,8 +6,7 @@ const clearBtn=  document.getElementById('clear-btn')
 
 // Get notes from localStorage
 function getNotes(){
-    return  JSON.parse(localStorage.getItem('notesEntities')) || [];
-    
+    return  JSON.parse(localStorage.getItem('notesEntities')) || []; 
 
 }
 

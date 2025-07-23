@@ -274,3 +274,94 @@ footer {
 .socials {
   margin-top: 0.5rem;
 }
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .note-editor {
+    width: 95%;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .background, .text-style, .toolbar, .text-align, .emoji {
+    margin: 10px 0;
+  }
+
+  .heading-element {
+    font-size: 1rem;
+  }
+
+  .note-text {
+    height: 150px;
+  }
+
+  .toolbar, .text-style, .text-align {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .note-editor {
+    padding: 1rem;
+  }
+
+  .toolbar button,
+  .toolbar select,
+  .text-align button {
+    font-size: 0.9rem;
+  }
+
+  .dropdown-menu {
+    grid-template-columns: repeat(4, 1fr);
+    width: 120px;
+  }
+
+  .heading-element {
+    font-size: 0.95rem;
+  }
+
+  .note-text {
+    font-size: 0.95rem;
+  }
+
+  .controls {
+    gap: 10px;
+  }
+
+  .font-style {
+    padding: 0.3rem 0.6rem;
+    margin-right: 10px;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .note-editor {
+    padding: 4rem;
+    max-width: 1000px;
+  }
+
+  .note-text {
+    height: 250px;
+  }
+}
+
