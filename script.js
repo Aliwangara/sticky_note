@@ -29,17 +29,44 @@ function displayNotes() {
 
     card.innerHTML = `
       <div class="card-header">
-        <h2>${note.heading}</h2>
+        <h2 class="note-heading"contenteditable="true">${note.heading}</h2>
       </div>
       <div class="card-body">
-        <p>${note.note}</p>
+        <p contenteditable="true">${note.note}</p>
       </div>
       <div class="card-footer">
-        <a href="#"><i class="fa-solid fa-pen-to-square"> Edit</i></a>
+        <a  class="edit-text"><i class="fa-solid fa-pen-to-square"> Edit</i></a>
         <a onClick ="deleteNote(${index})"><i class="fa-solid fa-trash"> Delete</i></a>
-        <a href="#"><img src="images/red_pin.png" alt="Pin Note"/></a>
       </div>
     `;
+
+    const noteHeading = card.querySelector('.note-heading');
+    const noteBody = card.querySelector('.card-body p');
+
+   const editText = card.querySelector('.edit-text');
+
+   editText.addEventListener('click', ()=>{
+
+
+       noteHeading.addEventListener('blur', ()=>{
+        if(noteHeading){
+            notesStorage[index].heading = noteHeading.innerHTML.trim();
+            localStorage.setItem('notesEntities', JSON.stringify(notesStorage))
+        }
+    })
+
+    noteBody.addEventListener('blur', ()=>{
+        if(noteBody){
+            notesStorage[index].note= noteBody.innerHTML.trim();
+            localStorage.setItem('notesEntities', JSON.stringify(notesStorage))
+        }
+    })
+
+
+
+
+   })
+   
 
     cardList.appendChild(card);
   });
@@ -69,6 +96,8 @@ clearBtn.addEventListener('click', ()=>{
     displayNotes()
    
 })
+
+
 
 
 
